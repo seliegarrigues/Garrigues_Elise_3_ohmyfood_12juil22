@@ -124,6 +124,9 @@ footer .end .fa.fa-handshake-angle {
   font-weight: 700;
   padding-left: 10px;
 }
+.input__location::-moz-placeholder {
+  color: rgb(9, 8, 8);
+}
 .input__location::placeholder {
   color: rgb(9, 8, 8);
 }
@@ -382,8 +385,10 @@ footer .end .fa.fa-handshake-angle {
 .visual__meal img {
   width: 100%;
   max-height: 55vh;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .menu-list {
@@ -491,16 +496,19 @@ footer .end .fa.fa-handshake-angle {
   }
 }
 .Menu__flex {
-  animation: appear 1200ms ease-in-out both;
+  -webkit-animation: appear 1200ms ease-in-out both;
+          animation: appear 1200ms ease-in-out both;
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
 .Menu__flex:nth-child(1) {
-  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .Menu__flex:nth-child(2) {
-  animation-delay: 2000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 @media screen and (min-width: 992px) {
   .Menu__flex {
@@ -546,7 +554,8 @@ footer .end .fa.fa-handshake-angle {
   margin-right: 0;
 }
 .Menu-item:hover .fa-solid {
-  animation: spinner 800ms ease-in-out;
+  -webkit-animation: spinner 800ms ease-in-out;
+          animation: spinner 800ms ease-in-out;
 }
 
 .order {
@@ -573,9 +582,25 @@ footer .end .fa.fa-handshake-angle {
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.86), rgba(255, 121, 218, 0.86));
 }
 
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes spinner {
   to {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes appear {
@@ -586,6 +611,14 @@ footer .end .fa.fa-handshake-angle {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@-webkit-keyframes load {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
   }
 }
 @keyframes load {
@@ -605,7 +638,8 @@ footer .end .fa.fa-handshake-angle {
   inset: 0;
   z-index: 1;
   opacity: 0.98;
-  animation: load 100ms 3s both;
+  -webkit-animation: load 100ms 3s both;
+          animation: load 100ms 3s both;
 }
 .loader::after {
   content: "";
@@ -616,7 +650,7 @@ footer .end .fa.fa-handshake-angle {
   border-right: 8px solid #99e2d0;
   border-top: #f2f2f2;
   border-radius: 50%;
-  animation: spinner 1s infinite ease-in-out;
+  -webkit-animation: spinner 1s infinite ease-in-out;
+          animation: spinner 1s infinite ease-in-out;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
