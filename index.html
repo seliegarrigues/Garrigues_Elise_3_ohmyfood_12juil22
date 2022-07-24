@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH MY FOOD</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/bc83aad1fd.js" crossorigin="anonymous">	
+    </script>
+</head>
+<body>
+    <div class="loader"></div>
+    <header>
+        <H1><img id="logo" src="images/logo/ohmyfood.png" alt="logo Oh my Food"/></H1>
+    </header>
+    <div class="input">
+        <i class="input__icon fa-solid fa-location-dot"></i>
+        <input class="input__location" type="text" id="city" placeholder="Paris, Belleville"/>
+    </div>
+    <section class="intro">
+        <h2> Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exceptions, sélectionnées par nos soins.</p>
+        <a href="#explore-link" class="intro__btn"> Explorez nos restaurants</a>
+    </section>
+    <main class="container">
+        <section class="menu">
+            <h2 class="menu__title"> Fonctionnement</h2>
+            <ol>
+                <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span> Choisissez un restaurant</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span> Composez votre menu</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-store"></i>
+                    <span> Dégustez au restaurant</span>
+                </li>
+            </ol>
+        </section>
+        <section class="restaurants">
+            <h2 id="explore-link">Restaurants</h2>
+            <div class="restaurants__list">
+                <a href="./La-palette-du-gout.html" class="cards news">
+                    <div class="cards__image cards__image-1"></div>
+                    <div class="cards__body">
+                        <h3> La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <div class="cards__btn"></div>
+                    </div>
+                </a>
+                <a href="./La-note-enchantee.html" class="cards news">
+                    <div class="cards__image cards__image-2"></div>
+                    <div class="cards__body">
+                        <h3> La note enchantée
+                        </h3>
+                        <p>Charonne</p>
+                        <div class="cards__btn"></div>
+                    </div>
+                </a>
+                <a href="./A-la-francaise.html" class="cards">
+                    <div class="cards__image cards__image-3"></div>
+                    <div class="cards__body">
+                        <h3> A la française
+                        </h3>
+                        <p>Citée Rouge</p>
+                        <div class="cards__btn"></div>
+                    </div>
+                </a>
+                <a href="./Le-delice-des-sens.html" class="cards">
+                    <div class="cards__image cards__image-4"></div>
+                    <div class="cards__body">
+                        <h3> Le délice des sens
+                        </h3>
+                        <p>Folie-Méricourt</p>
+                        <div class="cards__btn"></div>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <h2>Oh my Food</h2>
+        <div class="end">
+            <a href="#"><i class="fa-solid fa-utensils"></i><span> Proposer un restaurant</span></a>
+            <a href="#"><i class="fa-solid fa-handshake-angle"></i><span> Devenir partenaire</span></a>
+            <a href="#">Mentions légales</a>
+            <a href="mailto:#">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

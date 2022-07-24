@@ -1,0 +1,42 @@
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(10, 9, 9);
+    color: azure;
+    padding: 20px 0 40px 25px;
+
+    h2 {
+        font-family: $title-font;
+        font-weight: 500;
+        @media  #{$medium-screen} {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+.end {
+    span {
+        font-weight: 700;
+    }
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    @media  #{$medium-screen} {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+    .fa {
+        font-size: 16px;
+        &.fa-utensils {
+            margin-right: 16px;
+        }
+        &.fa-handshake-angle {
+            margin-right: 10px;
+        }
+    }
+}
+
+}

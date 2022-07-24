@@ -1,0 +1,45 @@
+
+.intro {
+ 
+    background-color: #fcfafa;
+    text-align: center;
+    padding: 6px 0 60px 0;
+    h2 {
+        font-size: 30px;
+        font-weight: 800;
+        margin: 16px 40px ;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        padding: 10px 20px 26px;
+    }
+    &__btn {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 500;
+        color: azure;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0px 4px 2px 2px;
+        text-decoration: none;
+        padding: 16px 20px;
+        background-image: linear-gradient( 0deg, #9356dc, #ff79da);
+      }
+       &__btn:hover {
+        
+        box-shadow: 0px 6px 2px 2px darken($color-back, $amount: 10%);
+        transform: scale(1.04);
+        transition: all 400ms ease-in-out;
+        background-image: linear-gradient(
+            
+            rgba(147, 86, 220),
+            rgba(255,121,218)
+        );
+        
+        
+        
+    
+      }
+}

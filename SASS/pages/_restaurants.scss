@@ -1,0 +1,78 @@
+.restaurants {
+    background-color: $color-back;
+    margin-top: 60px;
+    @media #{$medium-screen} {
+        border-radius: 20px;
+    }
+    h2 {
+        margin : 30px;
+        padding-top : 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 26px 60px 26px;
+        @media  #{$medium-screen} {
+            flex-direction: row;
+            row-gap: 50px;
+            justify-content: space-around;
+        }
+        .news {
+            position: relative;
+            &::before {
+                content:"Nouveau";
+                position: absolute;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: $color-tertiary;
+                border-radius: 6px;
+                color: scale-color($color: $color-tertiary, $lightness: -50%);
+                top: 16px;
+                right: 16px;
+                padding: 8px 12px;
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        background-color: #fcfafa;
+        border-radius: 16px;
+        overflow: hidden;
+        @include base-shadow;
+        @media  #{$medium-screen} {
+            flex-basis: 45%;
+        }
+        &:hover{
+            @include zoom;
+        }
+        &__image {
+            min-height: 150px;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        @include menu-pictures;
+    
+        &__body {
+            position: relative;
+            h3 {
+                padding: 10px 0 6px 0;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+            h3,
+            p {
+                margin-left: 10px;
+            }
+        }
+        &__btn {
+            @include heart-animation;
+            
+        }
+    }
+}

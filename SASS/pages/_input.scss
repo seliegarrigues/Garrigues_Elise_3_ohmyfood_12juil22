@@ -1,0 +1,25 @@
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-back;
+    padding: 10px 0 10px 15px;
+    &__icon {
+        font-size: 16px;
+        padding: 8px 10px;
+        color: rgb(9, 8, 8);
+    }
+    &__location {
+        width: 150px;
+        font-family: "roboto";
+        border: none;
+        font-size: 20px;
+        background-color: #f4f4f4;
+        line-height:40px;
+        font-weight: 700;
+        padding-left: 10px;
+        &::placeholder {
+            color: rgb(9, 8, 8);
+        }
+    }
+}

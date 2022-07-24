@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+ 
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+box-sizing: border-box;/* prise en compte par le navigateur de la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur*/
+}
+
+body,html {
+
+margin: 0;
+min-width: 300px;/*largeur minimale de l'ensemble*/
+font-family: $body-font;
+}
+
+h1 {
+font-family: $title-font;
+font-size: 20px;/* taille de la police sur l'élément*/
+}
+
+.container { 
+@media #{$large-screen} {
+
+    margin: auto;
+    max-width: 1440px;
+     
+}
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}/*  tous les liens sans soulignement avec la petite main, et de couleur de l'élément parent*/
+
+h3,h4,p {
+padding: 0;
+margin: 0;
+}
+
