@@ -1,0 +1,19 @@
+{
+  "name": "garrigues_elise_3_ohmyfood_12juil22",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "Sass": "sass --watch ./SASS/main.scss: ./CSS/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seliegarrigues/Garrigues_Elise_3_ohmyfood_12juil22.git"
+  },
+  "author": "elise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seliegarrigues/Garrigues_Elise_3_ohmyfood_12juil22/issues"
+  },
+  "homepage": "https://github.com/seliegarrigues/Garrigues_Elise_3_ohmyfood_12juil22#readme"
+}
