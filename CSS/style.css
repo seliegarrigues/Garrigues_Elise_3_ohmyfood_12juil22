@@ -510,7 +510,7 @@ footer .end .fa.fa-handshake-angle {
 }
 .Menu-item {
   display: flex;
-  background-color: beige;
+  background-color: #fcfafa;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0px 6px 2px 2px lightgrey;
